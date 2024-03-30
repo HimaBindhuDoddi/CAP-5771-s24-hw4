@@ -99,13 +99,13 @@ def question8():
 
     # For each row give the class predicted by the model after training using Naive Bayes
     # String: either '+' or '-'
-    answers["(d) Row 1"] = None
-    answers["(d) Row 2"] = None
-    answers["(d) Row 3"] = None
-    answers["(d) Row 4"] = None
+    answers["(d) Row 1"] = ""
+    answers["(d) Row 2"] = ""
+    answers["(d) Row 3"] = ""
+    answers["(d) Row 4"] = ""
 
     # float between 0 and 1
-    answers["(d) Training error rate"] = None
+    answers["(d) Training error rate"] = 0.0
 
     return answers
 
@@ -136,19 +136,19 @@ def question10():
     answers["(a) P(C=1|-)"] = 0.2
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = None
+    answers["(a) P(A=1|+) explain your answer"] = "I will write later,"
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = None 
-    answers["(b) P(R|+)"] = None
-    answers["(b) P(R|-)"] = None
+    answers["(b) P(+|R)"] = 0.0 
+    answers["(b) P(R|+)"] = 0.0
+    answers["(b) P(R|-)"] = 0.0
 
     # string, '+' or '-'
-    answers["(b) class label"] = None
+    answers["(b) class label"] = "+"
 
     # explain_string
-    answers["(b) Explain your reasoning"] = None
+    answers["(b) Explain your reasoning"] = "I will write later"
   
     # float
     answers["(c) P(A=1)"] = 0.5
@@ -175,7 +175,7 @@ def question10():
     answers["(e) A independent of B given class +?"] = "no"
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  ""
+    answers["(e) A and B conditionally independent given class +, explain"] =  "A and B conditionally not independent"
   
     return answers
 # --------------------------------------------------------
