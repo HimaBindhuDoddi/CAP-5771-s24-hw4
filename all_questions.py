@@ -99,13 +99,13 @@ def question8():
 
     # For each row give the class predicted by the model after training using Naive Bayes
     # String: either '+' or '-'
-    answers["(d) Row 1"] = ""
-    answers["(d) Row 2"] = ""
-    answers["(d) Row 3"] = ""
-    answers["(d) Row 4"] = ""
+    answers["(d) Row 1"] = "+"
+    answers["(d) Row 2"] = "-"
+    answers["(d) Row 3"] = "-"
+    answers["(d) Row 4"] = "-"
 
     # float between 0 and 1
-    answers["(d) Training error rate"] = 0.0
+    answers["(d) Training error rate"] = 0.38
 
     return answers
 
@@ -136,19 +136,19 @@ def question10():
     answers["(a) P(C=1|-)"] = 0.2
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = "I will write later,"
+    answers["(a) P(A=1|+) explain your answer"] = "There are 5 + classes in total, among them they are 3  values where A=1"
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = 0.0 
-    answers["(b) P(R|+)"] = 0.0
+    answers["(b) P(+|R)"] = 1.0 
+    answers["(b) P(R|+)"] = 0.2
     answers["(b) P(R|-)"] = 0.0
 
     # string, '+' or '-'
     answers["(b) class label"] = "+"
 
     # explain_string
-    answers["(b) Explain your reasoning"] = "I will write later"
+    answers["(b) Explain your reasoning"] = "Naive Bayes of P(A=1|+)* P(B=1|+)* P(C=1|+) is 0.192 whereas for P(A=1|-)* P(B=1|-)* P(C=1|-) it is 0.032"
   
     # float
     answers["(c) P(A=1)"] = 0.5
@@ -175,16 +175,16 @@ def question10():
     answers["(e) A independent of B given class +?"] = "no"
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  "A and B conditionally not independent"
+    answers["(e) A and B conditionally independent given class +, explain"] =  "P(A=1|+)*P(B=1|+) = 0.2 which is not equal to P(A=1|+)*P(B=1|+) = 0.24. So A and B conditionally independent given class +"
   
     return answers
 # --------------------------------------------------------
 if __name__ == '__main__':
     answers_dict = {}
     answers_dict['question1'] = question1()
-    answers_dict['question2'] = question2()
+    #answers_dict['question2'] = question2()
     answers_dict['question3'] = question3()
-    answers_dict['question4'] = question4()
+    #answers_dict['question4'] = question4()
     answers_dict['question7'] = question7()
     answers_dict['question8'] = question8()
     answers_dict['question9'] = question9()
